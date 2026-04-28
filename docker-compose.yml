@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  vitals-consumer:
+    image: lifesigns-vitals:latest
+    restart: unless-stopped
+    env_file: .env
